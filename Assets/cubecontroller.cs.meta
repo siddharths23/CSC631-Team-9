@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: 7d65d665a230ebc44a5bf5b92f159207
+<<<<<<<< HEAD:Assets/MaterialSwap.cs.meta
+guid: e55d48c3d1ec4644a88c7cbe9e4c30e9
+========
+guid: 8185c951713ea9b46928a81500382bb0
+>>>>>>>> main:Myproject/Assets/CubeController.cs.meta
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
