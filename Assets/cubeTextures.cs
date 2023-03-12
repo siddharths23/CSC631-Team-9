@@ -1,6 +1,7 @@
+
 using UnityEngine;
 
-public class CubeTextures : MonoBehaviour
+public class cubeTextures : MonoBehaviour
 {
     public Material[] materials;
 

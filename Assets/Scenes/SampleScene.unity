@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -930,7 +930,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 755315748}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2ee0387f4007d04aa81c64b47948da9, type: 3}
+  m_Script: {fileID: 11500000, guid: a7c9bef640a1dad46be8d9ac08bacc85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!4 &755315750
@@ -2598,7 +2598,6 @@ GameObject:
   - component: {fileID: 1604207901}
   - component: {fileID: 1604207900}
   - component: {fileID: 1604207899}
-  - component: {fileID: 1604207903}
   m_Layer: 0
   m_Name: Ground
   m_TagString: Ground
@@ -2640,7 +2639,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9a8fe31d67c0566429ad0297810435f0, type: 2}
+  - {fileID: 2100000, guid: 254ecae6f2507d64fb7a62441289c5d3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2685,18 +2684,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1604207903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1604207898}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d5291ae5d4f4e644bb95c00966017e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1648022383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2973,10 +2960,10 @@ GameObject:
   - component: {fileID: 1820391377}
   - component: {fileID: 1820391376}
   - component: {fileID: 1820391375}
-  - component: {fileID: 1820391374}
   - component: {fileID: 1820391379}
-  - component: {fileID: 1820391380}
   - component: {fileID: 1820391381}
+  - component: {fileID: 1820391382}
+  - component: {fileID: 1820391383}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -2984,22 +2971,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1820391374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1820391373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8185c951713ea9b46928a81500382bb0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 10
-  jumpForce: 10
-  thirdPersonCamera: {fileID: 963194225}
-  topDownCamera: {fileID: 1184673392}
 --- !u!65 &1820391375
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3094,20 +3065,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &1820391380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1820391373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3783dbaf1570aa64e92a673031a8c8b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  material1: {fileID: 2100000, guid: 86005a8bf62f0be459858f3e293a75b7, type: 2}
-  material2: {fileID: 2100000, guid: 72bb2daaf1423364da3327bc28d0df81, type: 2}
 --- !u!114 &1820391381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3121,6 +3078,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectilePrefab: {fileID: 394503156}
+--- !u!114 &1820391382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820391373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e55d48c3d1ec4644a88c7cbe9e4c30e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  jumpForce: 5
+  thirdPersonCamera: {fileID: 963194225}
+  topDownCamera: {fileID: 1184673392}
+--- !u!114 &1820391383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1820391373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8684e81978dcf14a8bd1a3163347706, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materials:
+  - {fileID: 2100000, guid: 86005a8bf62f0be459858f3e293a75b7, type: 2}
+  - {fileID: 2100000, guid: 72bb2daaf1423364da3327bc28d0df81, type: 2}
 --- !u!1001 &1854225806
 PrefabInstance:
   m_ObjectHideFlags: 0
